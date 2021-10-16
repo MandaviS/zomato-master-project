@@ -11,7 +11,9 @@ const ReviewSchema = new mongoose.Schema({
     rating: 
         {type: Number,required: true},          
     reviewText: 
-        {type: String,required: true},   
+        {type: String,required: true}, 
+    isRestaurantReview: Boolean,    
+    isFoodReview: Boolean,     
     photos: [{
          type: mongoose.Types.ObjectId,
          ref: "Images",
